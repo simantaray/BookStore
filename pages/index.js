@@ -10,11 +10,11 @@ export default function Home({ items, cards }) {
       </Head>
       {/* header */}
       <body className="relative ">
-        <div className="fixed opacity-25">
+        <div className="fixed ">
           <Header />
         </div>
 
-        {/* <TopHeader /> */}
+        <TopHeader />
       </body>
     </div>
   );
