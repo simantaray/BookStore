@@ -1,22 +1,24 @@
 import Head from "next/head";
 import Header from "../comps/Header";
 import TopHeader from "../comps/TopHeader";
+import TopTen from "../comps/TopTen";
 
 export default function Home({ items, cards }) {
   return (
-    <div>
+    <>
       <Head>
         <title>SNOW</title>
       </Head>
       {/* header */}
       <body className="relative ">
-        <div className="fixed ">
+        <div className="fixed z-50">
           <Header />
         </div>
 
         <TopHeader />
+        <TopTen />
       </body>
-    </div>
+    </>
   );
 }
 // export async function getStaticProps() {
