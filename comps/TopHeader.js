@@ -28,9 +28,9 @@ export default function TopHeader() {
         </div>
 
         <div className=" relative flex items-center text-center justify-center  ">
-          <div className="px-10 flex">
+          <div className="px-8 flex">
               <h1 className="text-lg ">Online</h1>
-              <div className=" border-2 p-[.1rem] m-[.9rem] h-1 w-1 rounded-full bg-green-500" ></div>
+              
           </div>
           <div className=" relative h-[50px] w-[50px]   border-4 rounded-full ">
             <Image

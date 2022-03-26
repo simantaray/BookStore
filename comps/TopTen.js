@@ -5,9 +5,10 @@ export default function TopTen() {
     return (
       
     <section className='z-0'>
-    <div className="flex space-x-4 overflow-scroll scrollbar-hide p-3 ">
+      <h1 className='relative mt-10 ml-[150px] text-1xl font-bold mb-[-32px]'>Top 10 in India today</h1>
+    <div className=" ml-[50px] flex space-x-4 overflow-scroll scrollbar-hide p-3 ">
       {array?.map((card) => (
-        <BookCard key={card} img={`/book${card}.png`} />
+        <BookCard key={card} img={`/book${card}.png`} index={card}/>
       ))}
     </div>
   </section>
