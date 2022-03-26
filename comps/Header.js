@@ -8,7 +8,7 @@ function Header() {
     <>
       <div className="relative h-[100vh] w-[100px] bg-gray-100">
         {/* logo */}
-        <div className="relative h-[60px] w-[60px] top-10 left-0 right-0 mx-auto my-auto ">
+        <div className="relative h-[60px] w-[60px] top-10 mx-auto my-auto ">
             <Image src="/logo.svg" alt="logo" layout='fill' className="p-10 cursor-pointer" />
         </div>
         
