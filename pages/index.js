@@ -1,4 +1,5 @@
 import Head from "next/head";
+import FriendsRecommendations from "../comps/FriendsRecommendations";
 import Header from "../comps/Header";
 import TopHeader from "../comps/TopHeader";
 import TopTen from "../comps/TopTen";
@@ -17,6 +18,10 @@ export default function Home({ items, cards }) {
 
         <TopHeader />
         <TopTen />
+        <div className="hidden xl:block z-50 fixed right-0 top-[100px] ">
+          <FriendsRecommendations />
+        </div>
+        
       </body>
     </>
   );

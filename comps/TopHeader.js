@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { SearchIcon } from "@heroicons/react/solid";
-
+import Friends from "./Friends";
 export default function TopHeader() {
   return (
     <header
@@ -32,33 +32,7 @@ export default function TopHeader() {
               <h1 className="text-lg ">Online</h1>
               
           </div>
-          <div className=" relative h-[50px] w-[50px]   border-4 rounded-full ">
-            <Image
-              src="/friend1.png"
-              alt="profile"
-              layout="fill"
-              objectFit="cover"
-              className="cursor-pointer"
-            />
-          </div>
-          <div className=" relative h-[50px] w-[50px] opacity-90  border-4 rounded-full ">
-            <Image
-              src="/friend2.png"
-              alt="profile"
-              layout="fill"
-              objectFit="cover"
-              className="cursor-pointer"
-            />
-          </div>
-          <div className=" relative h-[50px] w-[50px] r-[-100px] opacity-50 border-4 rounded-full ">
-            <Image
-              src="/friend3.png"
-              alt="profile"
-              layout="fill"
-              objectFit="cover"
-              className="cursor-pointer"
-            />
-          </div>
+          <Friends />
           <div></div>
         </div>
       </div>
