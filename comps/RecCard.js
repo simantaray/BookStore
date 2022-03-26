@@ -3,7 +3,7 @@ import Image from "next/image";
 import Friends from "./Friends";
 function RecCard({title, img ,author , dec}) {
   return (
-    <div className="bg-white rounded-lg w-[90%] h-[180px] mb-10">
+    <div className="cursor-pointer bg-white rounded-lg w-[90%] h-[180px] mb-10  hover:ml-[-15px] transition duration-200 ease-in-out">
       <div className="flex">
         <div className="relative h-[70px] w-[50px] top-4 left-4 p-4 ">
           <Image
