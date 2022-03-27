@@ -3,7 +3,7 @@ import FriendsRecommendations from "../comps/FriendsRecommendations";
 import Header from "../comps/Header";
 import TopHeader from "../comps/TopHeader";
 import TopTen from "../comps/TopTen";
-
+import ContinueReading from "../comps/ContinueReading";
 export default function Home({ items, cards }) {
   return (
     <>
@@ -11,7 +11,7 @@ export default function Home({ items, cards }) {
         <title>SNOW</title>
       </Head>
       {/* header */}
-      <body className="relative ">
+      <div className="relative ">
         <div className="fixed z-50">
           <Header />
         </div>
@@ -21,8 +21,9 @@ export default function Home({ items, cards }) {
         <div className="hidden xl:block z-50 fixed right-0 top-[100px] ">
           <FriendsRecommendations />
         </div>
+        <ContinueReading/>
         
-      </body>
+      </div>
     </>
   );
 }
